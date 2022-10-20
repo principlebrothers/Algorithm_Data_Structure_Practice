@@ -1,11 +1,12 @@
 const diagonalDifference = (arr) => {
-  let leftToRight = 0;
-  let rightToLeft = 0;
-  for (let i = 0; i < arr.length; i++) {
-    leftToRight += arr[i][i];
-    rightToLeft += arr[i][arr.length - 1 - i];
+  let leftDiagonal = 0;
+  let rightDiagonal = 0;
+  let n = arr.length;
+  for (let i = 0; i < n; i++) {
+    leftDiagonal += arr[i][i];
+    rightDiagonal += arr[i][n - 1 - i];
   }
-  return Math.abs(leftToRight - rightToLeft);
+  return Math.abs(leftDiagonal - rightDiagonal);
 }
 
 const arr = [
@@ -14,4 +15,4 @@ const arr = [
   [10, 8, -12],
 ];
 
-console.log(diagonalDifference(arr))
+console.log(diagonalDifference(arr));
