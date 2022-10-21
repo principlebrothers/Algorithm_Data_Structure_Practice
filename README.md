@@ -9,3 +9,5 @@ This repository contains my algorithm and data structure journey
 > Javascript
 
 ## Update file
+
+> I am fixing git commit challenge
