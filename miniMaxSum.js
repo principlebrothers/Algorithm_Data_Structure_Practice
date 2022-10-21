@@ -1,4 +1,4 @@
-function miniMaxSum(arr) {
+const miniMaxSum = (arr) => {
   let total = [];
   let min = 0;
   let max = 0;
@@ -13,7 +13,7 @@ function miniMaxSum(arr) {
 
 // BETTER ALTERNATE SOLUTION
 // -------------------------
-// function miniMaxSum(arr) {
+// const miniMaxSum = (arr) =>{
 //   // Find the min and max
 //   let min = Math.min(...arr);
 //   console.log(min)
