@@ -1,4 +1,4 @@
-function jumpingOnClouds(c) {
+const jumpingOnClouds = (c) => {
   // Write your code here
   // loop through the array
   // if the next is 0
