@@ -5,14 +5,16 @@ const minimumNumber = (n, password) => {
   const special_characters = "!@#$%^&*()-+";
 
   let count = 0;
+  let miniNum = 6;
+
   if (!numbers.split("").some((v) => password.includes(v))) count++;
   if (!lower_case.split("").some((v) => password.includes(v))) count++;
   if (!upper_case.split("").some((v) => password.includes(v))) count++;
   if (!special_characters.split("").some((v) => password.includes(v))) count++;
 
-  return Math.max(count, 6 - n);
+  return Math.max(count, miniNum - n);
 }
 
-let n = 3;
-let password = "Ab1";
+let password = "#HackerRank";
+let n = password.length;
 console.log(minimumNumber(n, password));
